@@ -17,7 +17,6 @@ body {
 }
 
 .sidebar {
-  width: 300px;
   background: royalblue;
   box-sizing: border-box;
 }
@@ -26,4 +25,66 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* my code starts here */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.contents {
+  flex-grow: 1;
+  display: flex;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  padding: 10px;
 }
